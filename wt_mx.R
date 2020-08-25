@@ -36,6 +36,7 @@ nei.nb.df$postal_address <- shapefile$poststed
 nei.nb.df = nei.nb.df %>%
   relocate(postal_number,postal_address)
 
+# save file
 readr::write_csv(nei.nb.df,"postalcode_adjacent_matrix_NOR.csv")
 
 
